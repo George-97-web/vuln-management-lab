@@ -1,0 +1,263 @@
+[
+  {
+    "": "75"
+  },
+  {
+    "": "Info"
+  },
+  {
+    "": "Name"
+  },
+  {
+    "": "Vim < 9.2.0073 Command Injection (GHSA-m3xh-9434-g336)"
+  },
+  {
+    "": "Python Library Brotli <= 1.1.0 DoS"
+  },
+  {
+    "": "Ruby Rack < 2.2.22 / 3.0.0.beta1 < 3.1.20 / 3.2.0 < 3.2.5 Multiple Vulnerabilities"
+  },
+  {
+    "": "Vim < 9.1.2132 Buffer Overflow (GHSA-5w93-4g67-mm43)"
+  },
+  {
+    "": "Vim < 9.2.0075 Heap-based Buffer Underflow (GHSA-xcc8-r6c5-hvwv)"
+  },
+  {
+    "": "SSL Certificate Cannot Be Trusted"
+  },
+  {
+    "": "Vim < 9.2.0074 Heap-based Buffer Overflow (GHSA-h4mf-vg97-hj8j)"
+  },
+  {
+    "": "Ruby REXML 3.3.3 < 3.4.2 DoS vulnerability"
+  },
+  {
+    "": "AI/LLM Software Report"
+  },
+  {
+    "": "Apache HTTP Server Installed (Linux)"
+  },
+  {
+    "": "Apache HTTP Server Site Enumeration"
+  },
+  {
+    "": "Common Platform Enumeration (CPE)"
+  },
+  {
+    "": "Curl Installed (Linux / Unix)"
+  },
+  {
+    "": "Device Hostname"
+  },
+  {
+    "": "Device Type"
+  },
+  {
+    "": "Dockerfile Detection for Linux/UNIX"
+  },
+  {
+    "": "Enumerate IPv4 Interfaces via SSH"
+  },
+  {
+    "": "Enumerate IPv6 Interfaces via SSH"
+  },
+  {
+    "": "Enumerate MAC Addresses via SSH"
+  },
+  {
+    "": "Enumerate the Network Interface configuration via SSH"
+  },
+  {
+    "": "Enumerate the Network Routing configuration via SSH"
+  },
+  {
+    "": "Enumerate the PATH Variables"
+  },
+  {
+    "": "Ethernet Card Manufacturer Detection"
+  },
+  {
+    "": "Ethernet MAC Addresses"
+  },
+  {
+    "": "Exiv2 Installed (Linux / Unix)"
+  },
+  {
+    "": "HTTP Server Type and Version"
+  },
+  {
+    "": "Hierarchical Data Format HDF5 File Detection for Linux/UNIX"
+  },
+  {
+    "": "HyperText Transfer Protocol (HTTP) Information"
+  },
+  {
+    "": "IP Assignment Method Detection"
+  },
+  {
+    "": "Java Detection and Identification (Linux / Unix)"
+  },
+  {
+    "": "Jmcnamara Spreadsheet-ParseExcel Installed (Unix)"
+  },
+  {
+    "": "Libgcrypt Installed (Linux/UNIX)"
+  },
+  {
+    "": "Libndp Installed (Linux / Unix)"
+  },
+  {
+    "": "Linux Mounted Devices"
+  },
+  {
+    "": "Linux Time Zone Information"
+  },
+  {
+    "": "Linux User List Enumeration"
+  },
+  {
+    "": "MariaDB Client/Server Installed (Linux)"
+  },
+  {
+    "": "Nessus Scan Information"
+  },
+  {
+    "": "Nessus Server Detection"
+  },
+  {
+    "": "Netstat Connection Information"
+  },
+  {
+    "": "Netstat Portscanner (SSH)"
+  },
+  {
+    "": "Node.js Installed (Linux / UNIX)"
+  },
+  {
+    "": "NumPy Detection"
+  },
+  {
+    "": "OS Fingerprints Detected"
+  },
+  {
+    "": "OS Identification"
+  },
+  {
+    "": "OS Identification and Installed Software Enumeration over SSH v2 (Using New SSH Library)"
+  },
+  {
+    "": "OS Security Patch Assessment Available"
+  },
+  {
+    "": "OpenJDK Java Detection (Linux / Unix)"
+  },
+  {
+    "": "OpenSSL Installed (Linux)"
+  },
+  {
+    "": "OpenVPN Installed (Linux)"
+  },
+  {
+    "": "PHP Scripting Language Installed (Unix)"
+  },
+  {
+    "": "Package Manager Packages Report (nix)"
+  },
+  {
+    "": "Patch Report"
+  },
+  {
+    "": "PostgreSQL Client/Server Installed (Linux)"
+  },
+  {
+    "": "Remote Services Not Using Post-Quantum Ciphers"
+  },
+  {
+    "": "Ruby Gem Modules Installed (Linux)"
+  },
+  {
+    "": "Ruby Programming Language Installed (Linux)"
+  },
+  {
+    "": "SQLite Local Detection (Linux / Unix)"
+  },
+  {
+    "": "SSL / TLS Versions Supported"
+  },
+  {
+    "": "SSL Certificate Information"
+  },
+  {
+    "": "SSL Cipher Suites Supported"
+  },
+  {
+    "": "SSL Perfect Forward Secrecy Cipher Suites Supported"
+  },
+  {
+    "": "Service Detection"
+  },
+  {
+    "": "Shor's Harvest Now Decrypt Later"
+  },
+  {
+    "": "Software Enumeration (SSH)"
+  },
+  {
+    "": "Strict Transport Security (STS) Detection"
+  },
+  {
+    "": "TLS Supported Groups"
+  },
+  {
+    "": "TLS Version 1.2 Protocol Detection"
+  },
+  {
+    "": "TLS Version 1.3 Protocol Detection"
+  },
+  {
+    "": "Target Credential Issues by Authentication Protocol - No Issues Found"
+  },
+  {
+    "": "Target Credential Status by Authentication Protocol - Valid Credentials Provided"
+  },
+  {
+    "": "Tenable Nessus Installed (Linux)"
+  },
+  {
+    "": "Time of Last System Startup"
+  },
+  {
+    "": "Tornado Detection"
+  },
+  {
+    "": "Tukaani XZ Utils Installed (Linux / Unix)"
+  },
+  {
+    "": "Unix / Linux Running Processes Information"
+  },
+  {
+    "": "Unix Software Discovery Commands Available"
+  },
+  {
+    "": "VMWare Tools or Open VM Tools Installed (Linux)"
+  },
+  {
+    "": "VMware Virtual Machine Detection"
+  },
+  {
+    "": "Vim Installed (Linux)"
+  },
+  {
+    "": "libcurl Installed (Linux / Unix)"
+  },
+  {
+    "": "libexiv2 Installed (Linux / Unix)"
+  },
+  {
+    "": "nginx Installed (Linux/UNIX)"
+  },
+  {
+    "": "* indicates the v3.0 score was not available; the v2.0 score is shown"
+  }
+]
