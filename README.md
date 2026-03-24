@@ -52,3 +52,10 @@ vuln-management-lab/
 ├── reports/        ← Power BI dashboard
 └── README.md
 \`\`\`
+## Remediation Log
+
+| Date | Issue | CVE | Asset | Action | Result |
+|---|---|---|---|---|---|
+| 2026-03-20 | MS17-010 EternalBlue | CVE-2017-0144 | WinServer-2012 | Disabled SMBv1 | ✅ Verified Fixed |
+| 2026-03-20 | SMBv1 Multiple Vulns | CVE-2017-0267 | WinServer-2012 | Disabled SMBv1 | ✅ Verified Fixed |
+```
