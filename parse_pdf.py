@@ -142,21 +142,36 @@ def parse_pdf(pdf_path):
     return findings
 
 # ── Run ───────────────────────────────────────
-findings = parse_pdf("nessus_report.pdf")
-findings.sort(key=lambda x: x["risk_score"], reverse=True)
+findings_win = parse_pdf("rescan_winserver2012_01.pdf")
+# Parse original for other 3 assets
+findings_original = parse_pdf("nessus_report.pdf")
 
+# Filter original to exclude WinServer-2012
+findings_others = [
+    f for f in findings_original
+    if f["asset"] != "WinServer-2012"
+]
+
+# Combine
+all_findings = findings_win + findings_others
+all_findings.sort(key=lambda x: x["risk_score"], reverse=True)
+
+# Save
 with open("cve_findings.json", "w", encoding="utf-8") as f:
-    json.dump(findings, f, indent=2)
+    json.dump(all_findings, f, indent=2)
 
 # Summary
 from collections import Counter
-sev_counts = Counter(f["severity_label"] for f in findings)
+sev_counts = Counter(f["severity_label"] for f in all_findings)
 
-print(f"\n✓ Total CVE findings: {len(findings)} → cve_findings.json")
+print(f"\n✓ Total CVE findings: {len(all_findings)} → cve_findings.json")
 print(f"  🔴 Critical : {sev_counts.get('CRITICAL', 0)}")
 print(f"  🟠 High     : {sev_counts.get('HIGH', 0)}")
 print(f"  🟡 Medium   : {sev_counts.get('MEDIUM', 0)}")
 print(f"  🟢 Low      : {sev_counts.get('LOW', 0)}")
 print(f"\nTop 5 by Risk Score:")
-for f in findings[:5]:
+for f in all_findings[:5]:
     print(f"  [{f['severity_label']}] {f['name'][:50]} | CVE: {f['cve'][:40]} | Score: {f['risk_score']}")
+
+
+

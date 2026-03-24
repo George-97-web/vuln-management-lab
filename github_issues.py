@@ -79,7 +79,7 @@ with open("cve_findings.json", "r") as f:
 # ── Only create issues for Critical and High ──
 priority_findings = [
     f for f in findings
-    if f["severity_label"] in ["CRITICAL", "HIGH"]
+    if f["severity_label"] in ["CRITICAL", "HIGH", "MEDIUM"]
 ]
 
 print(f"Creating GitHub Issues for {len(priority_findings)} Critical/High findings...\n")
@@ -88,3 +88,4 @@ for finding in priority_findings:
     create_issue(finding)
 
 print(f"\n✓ Done — check your GitHub repository Issues tab")
+
