@@ -142,18 +142,23 @@ def parse_pdf(pdf_path):
     return findings
 
 # ── Run ───────────────────────────────────────
+# WinServer-2012 rescan
 findings_win = parse_pdf("rescan_winserver2012_01.pdf")
-# Parse original for other 3 assets
+
+# Metasploitable rescan
+findings_meta = parse_pdf("rescan_metasploitable_01.pdf")
+
+# Original scan for Kali and Windows-10 only
 findings_original = parse_pdf("nessus_report.pdf")
 
-# Filter original to exclude WinServer-2012
+# Filter original to Kali and Windows-10 only
 findings_others = [
     f for f in findings_original
-    if f["asset"] != "WinServer-2012"
+    if f["asset"]  not in ["WinServer-2012", "Metasploitable"]
 ]
 
 # Combine
-all_findings = findings_win + findings_others
+all_findings = findings_win + findings_meta + findings_others
 all_findings.sort(key=lambda x: x["risk_score"], reverse=True)
 
 # Save
